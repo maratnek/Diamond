@@ -5,10 +5,19 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './components/main/main.component';
+import { ShopCartComponent } from './components/shop-cart/shop-cart.component';
+
+import {MdMenuModule} from '@angular/material';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    MainComponent,
+    ShopCartComponent,
+    MdMenuModule
   ],
   imports: [
     BrowserModule,
