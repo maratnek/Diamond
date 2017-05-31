@@ -1,11 +1,20 @@
-<p>
-  navigate works!
-</p>
-<!-- <md-menu #appMenu="mdMenu">
-  <button md-menu-item [routerLink]="['/main']"> Галерея </button>
-  <button md-menu-item [routerLink]="['/shop-cart']"> Корзина </button>
+<md-toolbar color="">
+
+	<img style="height: 90%;" src="../../../assets/logo_diamond.svg" alt="">
+  <span class="example-spacer"></span>
+  <button md-button [mdMenuTriggerFor]="appMenu">
+	  <md-icon>menu</md-icon> 
+	</button>
+
+</md-toolbar>
+
+<md-menu #appMenu="mdMenu">
+  <button md-menu-item [routerLink]="['/main']">
+  	Галерея <md-icon>view list</md-icon>  </button>
+  <button md-menu-item [routerLink]="['/shop-cart']">
+ 	 	Корзина <md-icon>shopping cart</md-icon> 
+ 	 	</button>
 </md-menu>
 
-<button md-icon-button [mdMenuTriggerFor]="appMenu">
-   <md-icon>more_vert</md-icon>
-</button> -->
+
+

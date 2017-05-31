@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {  MaterialModule, MdNativeDateModule} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { ShopCartComponent } from './components/shop-cart/shop-cart.component';
+import { NavigateComponent } from './components/navigate/navigate.component';
 
-import {MdMenuModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,16 @@ import {MdMenuModule} from '@angular/material';
     HeaderComponent,
     MainComponent,
     ShopCartComponent,
-    MdMenuModule
+    NavigateComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MdNativeDateModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
